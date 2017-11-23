@@ -1,0 +1,14 @@
+.card{
+    margin-bottom: 2rem;
+    &+.card{
+        margin-left: 2rem;
+    }
+    &-header{
+        display: flex;
+        background: $dark;
+        color: $white;
+        height: $header-height;
+        padding: 0 1.25rem;
+        align-items: center;
+    }
+}

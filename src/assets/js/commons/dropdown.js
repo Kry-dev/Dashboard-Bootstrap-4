@@ -1,1 +1,4 @@
-$('.dropdown-toggle').dropdown();
+
+$(function () {
+    $('[data-toggle="dropdown"]').dropdown();
+})

@@ -17,57 +17,131 @@
 	<title>Dashboard Boostrap 4</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dropdown
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-				</form>
+	
+  <header class="header d-flex">
+		<form class="form-inline" action="" method="">
+			<button class="header-form-btn" type="submit"><i class="fa fa-search"></i></button>
+			<input class="form-control" type="search" aria-label="Search">
+		</form>
+	</header> <!-- header -->
+	<div class="wrapper d-flex">
+		<nav id="sidebar" class="sidebar">
+			 <div class="user-info">
+					<img src="http://via.placeholder.com/40x40" alt="user photo" class=".rounded-circle">
+					<h5 class="user-info__name">John Block</h2>
+					<p class="user-info__company">Comany LLC</p>
 			</div>
-		</div>
-  </nav>
-  <header class="header d-flex flex-column justify-content-center">
-      <div class="container">
-        <h1 class="display-2">Bootstrap 4</h1>
-      </div>
-  </header>
-  <main class="main d-flex">
-    <div class="container">
-      <div class="row">
-          <div class="col">1</div>
-          <div class="col">2</div>
-          <div class="col">3</div>
-      </div>
-    </div>
-  </main>
-  
-  <footer class="footer d-flex justify-content-center">
-    <p class="display-3">footer</p>
-  </footer>
+			<!-- Sidebar Links -->
+			<ul class="nav-links">
+					<li><a class="btn-nav active" href="#">— Dashboard</a></li>
+					<li><a class="btn-nav" href="#projekt" data-toggle="collapse" >— Projekt</a>
+						<div class="collapse show" id="projekt">
+							<a class="btn-nav" href="#">Offen <span class="badge">123</span></a>
+							<a class="btn-nav" href="#">Aufgegeben</a>
+							<a class="btn-nav" href="#">Archive</a>
+						</div>
+					</li>
+					<li><a class="btn-nav" href="#skills" data-toggle="collapse" >— Skills</a>
+						<div class="collapse" id="skills">
+							<a class="btn-nav" href="#">Alle Skills</a>
+							<a class="btn-nav" href="#">Neue Skills hinzuf.</a>
+							<a class="btn-nav" href="#">Deine Skills</a>
+						</div>
+					</li>
+					<li><a class="btn-nav" href="#mitglieder" data-toggle="collapse" >— Mitglieder</a>
+						<div class="collapse" id="mitglieder">
+							<a class="btn-nav" href="#">Verfügbar <span class="badge">123</span></a>
+							<a class="btn-nav" href="#">Gebuchte</a>
+							<a class="btn-nav" href="#">Alle Mitglieder</a>
+						</div>
+					</li>
+					<li><a class="btn-nav" href="#">— Statistiken</a></li>
+				</ul><!-- Sidebar Navigation -->
+				<div class="sidebar-footer">
+					<a href="#" class="fa fa-sign-out"></a>
+					<a href="#" class="fa fa-cog"></a>
+				</div>
+		</nav><!-- sidebar -->
+		<main id="content" class="content">
+			<section class="content-header">
+				<h1 class="content-title">Dashboard</h1>
+			</section>
+			<section class="content-boxes">
+				<div class="row no-gutters">
+						<div class="col card">
+								<div class="card-header">Verfügbare  Mitglieder</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+						<div class="col card">
+								<div class="card-header">Gebuchte Mitglieder</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+				</div>
+				<div class="row no-gutters">
+						<div class="col card">
+								<div class="card-header">Offene Projekte</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+						<div class="col card">
+								<div class="card-header">Neue Skills</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+						<div class="col card">
+								<div class="card-header">Projekt Archive</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+				</div>
+				<div class="row no-gutters">
+						<div class="col card">
+								<div class="card-header">Aufgebene Projekte</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+						<div class="col card">
+								<div class="card-header">Projekt Anfragen</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+						<div class="col card">
+								<div class="card-header">Mitglieder</div>
+								<div class="card-body">
+									<h4 class="card-title">Special title treatment</h4>
+									<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+								</div>
+						</div>
+					</div>	
+			</section>
+			
+			
+		</main><!-- Main content -->
+	</div>
 
 <!-- JS -->
 <script src="assets/js/main.min.js"></script>

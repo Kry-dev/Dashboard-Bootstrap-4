@@ -13,10 +13,12 @@
 @import "../../../node_modules/bootstrap/scss/card"; 
 @import "../../../node_modules/bootstrap/scss/list-group"; 
 @import "../../../node_modules/bootstrap/scss/images"; 
-
+@import "../../../node_modules/font-awesome/scss/font-awesome";
 
 
 @import "commons/variables";
 @import "commons/header";
-@import "commons/main";
+@import "commons/layout";
 @import "commons/footer";
+@import "commons/sidebar";
+@import "commons/card";
