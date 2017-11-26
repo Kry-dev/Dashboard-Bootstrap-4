@@ -1,14 +1,18 @@
 .card{
-    margin-bottom: 2rem;
+    margin-bottom: 1.875rem;
+    min-height: 21rem;
     &+.card{
-        margin-left: 2rem;
+        margin-left: 1.875rem;
     }
     &-header{
         display: flex;
         height: $header-height;
-        padding: 0 1.25rem;
+        font-size: 1rem;  
         align-items: center;
         color: $white;
+    }
+    &-body{
+        padding: 1.875rem;
     }
     &-footer{
         display: flex;
