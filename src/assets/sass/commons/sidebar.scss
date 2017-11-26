@@ -1,6 +1,13 @@
+.toggle-sidebar{
+    color: $white;
+    z-index: 50;
+    &:hover,
+    &:active{
+        color: $primary;
+    }
+}
 .sidebar{
-    max-width: 180px;
-    min-width: 180px;
+    width: 180px;
     min-height: 100vh;
     background-color: $dark;
     color: $white;
@@ -8,7 +15,10 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-top: -$header-height;
-
+    transition: width 0.2s ease;
+    &.show{
+        width: 180px;
+    }
     &-footer{
         display: flex;
         justify-self: flex-end;
@@ -34,7 +44,7 @@
     justify-content: center;
     align-items: center;
     padding: 0 1.25rem;
-    flex: 0 0 auto;
+    margin-top: 40px;
     img{
         width: 40px;
         height: 40px;
@@ -97,4 +107,25 @@
             margin-bottom: 1rem;
         }
     }
+}
+
+#sidebar.collapse {
+    width: 0;
+    opacity: 0;
+    &.show{
+        width: 180px;
+        opacity: 1;
+    }
+  }
+  
+#sidebar.collapsing {
+    opacity: 0.8;
+    width: 0;
+    -webkit-transition-timing-function: ease-in-out;
+            -o-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-property: width;
+            -o-transition-property: width;
+            transition-property: width;
+
 }

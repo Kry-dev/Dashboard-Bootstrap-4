@@ -1,6 +1,6 @@
 .card{
     margin-bottom: 1.875rem;
-    min-height: 21rem;
+    min-height: 17.125rem;
     &+.card{
         margin-left: 1.875rem;
     }
@@ -10,9 +10,11 @@
         font-size: 1rem;  
         align-items: center;
         color: $white;
+        padding: 0 1.875rem;
+        font-family: 'Montserrat-ExtraBold';
     }
     &-body{
-        padding: 1.875rem;
+        padding: 1.625rem 1.875rem;
     }
     &-footer{
         display: flex;
