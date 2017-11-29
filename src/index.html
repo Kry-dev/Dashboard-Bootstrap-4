@@ -1,75 +1,772 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-	<!-- Useful meta tags -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="robots" content="index, follow, noodp">
-	<meta name="googlebot" content="index, follow">
-	<meta name="google" content="notranslate">
-	<meta name="format-detection" content="telephone=no">
-	<!-- styles -->
-	<link rel="stylesheet" href="assets/css/style.min.css">
+  <!-- Useful meta tags -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow, noodp">
+  <meta name="googlebot" content="index, follow">
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
 
-	<title>Dashboard Boostrap 4</title>
+  <title>Dashboard Boostrap 4</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="#">Navbar</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-				
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Dropdown
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-				</form>
-			</div>
-		</div>
-  </nav>
-  <header class="header d-flex flex-column justify-content-center">
-      <div class="container">
-        <h1 class="display-2">Bootstrap 4</h1>
+  <div class="wrapper d-flex">
+    <nav id="sidebar" class="sidebar show">
+      <div class="user-info">
+        <img src="http://placehold.it/45x45" alt="user photo" class="d-flex rounded-circle">
+        <h5 class="user-info__name">John Block</h2>
+          <p class="user-info__company">Comany LLC</p>
       </div>
-  </header>
-  <main class="main d-flex">
-    <div class="container">
-      <div class="row">
-          <div class="col">1</div>
-          <div class="col">2</div>
-          <div class="col">3</div>
+      <!-- Sidebar Links -->
+      <ul class="nav-links">
+        <li>
+          <a class="btn-nav active" href="#">— Dashboard</a>
+        </li>
+        <li>
+          <a class="btn-nav" href="#projekt" data-toggle="collapse">— Projekt</a>
+          <div class="collapse show" id="projekt">
+            <a class="btn-nav" href="#">Offen
+              <span class="badge">123</span>
+            </a>
+            <a class="btn-nav" href="#">Aufgegeben</a>
+            <a class="btn-nav" href="#">Archive</a>
+          </div>
+        </li>
+        <li>
+          <a class="btn-nav" href="#skills" data-toggle="collapse">— Skills</a>
+          <div class="collapse" id="skills">
+            <a class="btn-nav" href="#">Alle Skills</a>
+            <a class="btn-nav" href="#">Neue Skills hinzuf.</a>
+            <a class="btn-nav" href="#">Deine Skills</a>
+          </div>
+        </li>
+        <li>
+          <a class="btn-nav" href="#mitglieder" data-toggle="collapse">— Mitglieder</a>
+          <div class="collapse" id="mitglieder">
+            <a class="btn-nav" href="#">Verfügbar
+              <span class="badge">123</span>
+            </a>
+            <a class="btn-nav" href="#">Gebuchte</a>
+            <a class="btn-nav" href="#">Alle Mitglieder</a>
+          </div>
+        </li>
+        <li>
+          <a class="btn-nav" href="#">— Statistiken</a>
+        </li>
+      </ul>
+      <!-- Sidebar Navigation -->
+      <div class="sidebar-footer">
+        <a href="#" class="fa fa-sign-out"></a>
+        <a href="#" class="fa fa-cog"></a>
       </div>
-    </div>
-  </main>
-  
-  <footer class="footer d-flex justify-content-center">
-    <p class="display-3">footer</p>
-  </footer>
+    </nav> <!-- end of sidebar -->
+    <main id="content" class="content">
+      <header class="header d-flex">
+        <a href="#sidebar" class="toggle-sidebar" data-toggle="collapse"><i class="fa fa-navicon fa-lg"></i></a>
+        <form class="form-inline" action="" method="">
+          <button class="header-form-btn" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+          <input class="form-control" type="search" aria-label="Search">
+        </form>
+      </header>
+      <!-- end of header -->
+      <section class="content-header">
+        <h1 class="content-title">Dashboard</h1>
+      </section> <!-- end of content-header -->
+      <section class="content-boxes">
+        <!-- row 1 -->
+        <div class="row">
+          <div class="col col-lg-6">
+            <div class="card">
+              <div class="card-header bg-dark">Verfügbare Mitglieder</div>
+              <div class="card-body pb-0">
+                <ul class="members">
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info">
+                      <div class="member-img">
+                        <img src="http://placehold.it/45x45" alt="user photo" class="mr-3 rounded-circle">
+                      </div>
+                      <div class="member-company">
+                        <h5>Creative Group</h5>
+                        <p>Lorem Ipsum Weg</p>
+                        <p>123456 Heidelberg</p>
+                      </div>
+                    </div>
+                    <div class="member-position w-30">
+                      <h5>UI-UX Designer</h5>
+                    </div>
+                    <div class="member-skill-tags w-30">
+                      <ul class="tags-list">
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem </a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem ipsum</a>
+                        </li>
+                      </ul>
+                      <span class="teal">+ 10 Mehr </span>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tagslist">
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem ipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">loremipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                      </div>
+                    </div>
+                    <button id="tagslist" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                  </li>
+                  <!-- member-1 -->
 
-<!-- JS -->
-<script src="assets/js/main.min.js"></script>
+                  <li class="member pb-2 mb-0">
+                    <div class="member-info">
+                      <div class="member-img">
+                        <img src="http://placehold.it/45x45" alt="user photo" class="mr-3 rounded-circle">
+                      </div>
+                      <div class="member-company text-center">
+                        <h5>App4you</h5>
+                        <p>Lorem Ipsum Weg</p>
+                        <p>123456 Heidelberg</p>
+                      </div>
+                    </div>
+                    <div class="member-position w-30">
+                      <h5> Berater</h5>
+                    </div>
+                    <div class="member-skill-tags w-30">
+                      <ul class="tags-list">
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem ipsum</a>
+                        </li>
+                      </ul>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tagslist-2">
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem ipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">loremipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                      </div>
+                      <span class="teal">+ 10 Mehr </span>
+                    </div>
+                    <button id="tagslist-2" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                  </li>
+                  <!-- member2- -->
+                </ul>
+                <!-- Members -->
+              </div>
+              <div class="card-footer pt-0 justify-content-end">
+                <div class="members-aviable w-40">
+                  <p>verfügbare Mitglieder</p>
+                  <span class="display-3 green">18</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row 1 col 1-->
+
+          <div class="col col-lg-6">
+            <div class="card">
+              <div class="card-header bg-dark">Gebuchte Mitglieder</div>
+              <div class="card-body pb-0">
+                <ul class="members">
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info">
+                      <div class="member-img">
+                        <img src="http://placehold.it/45x45" alt="user photo" class="mr-3 rounded-circle">
+                      </div>
+                      <div class="member-company">
+                        <h5>AlwaysBussy</h5>
+                        <p>Lorem Ipsum Weg</p>
+                        <p>123456 Heidelberg</p>
+                      </div>
+                    </div>
+                    <div class="member-position w-30">
+                      <h5>Business Design</h5>
+                    </div>
+                    <div class="member-skill-tags w-30">
+                      <ul class="tags-list">
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem </a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem ipsum</a>
+                        </li>
+                      </ul>
+                      <span class="teal">+ 10 Mehr </span>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tagslist">
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem ipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">loremipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                      </div>
+                    </div>
+                    <button id="tagslist" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                  </li>
+                  <!-- member-1 -->
+
+                  <li class="member pb-2 mb-0">
+                    <div class="member-info">
+                      <div class="member-img">
+                        <img src="http://placehold.it/45x45" alt="user photo" class="mr-3 rounded-circle">
+                      </div>
+                      <div class="member-company text-center">
+                        <h5>App House LLC</h5>
+                        <p>Lorem Ipsum Weg</p>
+                        <p>123456 Heidelberg</p>
+                      </div>
+                    </div>
+                    <div class="member-position w-30">
+                      <h5>Swift Developer</h5>
+                    </div>
+                    <div class="member-skill-tags w-30">
+                      <ul class="tags-list">
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                        </li>
+                        <li>
+                          <a href="#" class="badge badge-pill badge-rosewood">lorem ipsum</a>
+                        </li>
+                      </ul>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="tagslist-2">
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem ipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">loremipsum</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <span class="badge badge-pill badge-rosewood">lorem</span>
+                        </a>
+                      </div>
+                      <span class="teal">+ 10 Mehr </span>
+                    </div>
+                    <button id="tagslist-2" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                  </li>
+                  <!-- member2- -->
+                </ul>
+                <!-- Members -->
+              </div>
+              <div class="card-footer pt-0 justify-content-end">
+                <div class="members-aviable w-40">
+                  <p>Gebuchte Mitglieder</p>
+                  <span class="display-3 yellow">134</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- row 1 col 2-->
+
+ 
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <div class="card-header bg-dark">Verfügbare Mitglieder</div>
+              <div class="card-body pb-0">
+                <ul class="members">
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info mr-1">
+                      <div class="member-company text-center">
+                        <h5>ABCDE123456789</h5>
+                        <div class="member-skill-tags">
+                          <ul class="tags-list">
+                            <li>
+                              <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                            </li>
+                            <li>
+                              <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                            </li>
+                            <li>
+                              <a href="#" class="badge badge-pill badge-rosewood">lorem ipsum</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <div class="member-head">
+                        <p class="mb-2">Leitung bei</p>
+                        <p class="blue">Management GmbH 7578843 Hamburg</p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- member-1 -->
+                  <li class="member pb-2 mb-0">
+                    <div class="member-info mr-1">
+                      <div class="member-company text-center">
+                        <h5>ABCDE123456789</h5>
+                        <div class="member-skill-tags">
+                          <ul class="tags-list">
+                            <li>
+                              <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                            </li>
+                            <li>
+                              <a href="#" class="badge badge-pill badge-rosewood">lorem</a>
+                            </li>
+                            <li>
+                              <a href="#" class="badge badge-pill badge-rosewood">lorem ipsum</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <div class="member-head">
+                        <p class="mb-2">Leitung bei</p>
+                        <p class="blue">Management GmbH 7578843 Hamburg</p>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- member-2 -->
+
+                </ul>
+                <!-- Members -->
+
+              </div>
+              <div class="card-footer pt-0 justify-content-end">
+                <div class="members-aviable w-50">
+                  <p>Alle offene Projekte
+                  </p>
+                  <span class="display-4 dark">03</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of row 2 - col 1-->
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <div class="card-header bg-dark">Neue Skills</div>
+              <div class="card-body pb-0">
+                <ul class="members">
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info">
+                      <div class="member-img">
+                        <img src="http://placehold.it/30x30" alt="user photo" class="mr-3 rounded-circle">
+                      </div>
+                      <div class="member-skill text-center">
+                        <h5>JAVA</h5>
+                        <p>Build it</p>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <ul class="skill-users">
+                        
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li class="skill-hidden">
+                          <a href="#">
+                            <span class="skill-hid-count">10</span>
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- end member-1 -->
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info">
+                      <div class="member-img">
+                        <img src="http://placehold.it/30x30" alt="user photo" class="mr-3 rounded-circle">
+                      </div>
+                      <div class="member-skill text-left">
+                        <h5>SAP Fiori</h5>
+                        <p>Build it</p>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <ul class="skill-users">
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- end member-2 -->
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info">
+                      <div class="member-img">
+                        <img src="http://placehold.it/30x30" alt="user photo" class="mr-3 rounded-circle">
+                      </div>
+                      <div class="member-skill text-left">
+                        <h5>Swift</h5>
+                        <p>Build it</p>
+                      </div>
+                    </div>
+                    <div class="member-info">
+                      <ul class="skill-users">
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="http://placehold.it/19x19" alt="user photo" class="rounded-circle">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <!-- end of member-2 -->
+
+
+                </ul>
+                <!-- end of Members -->
+
+              </div>
+              <div class="card-footer pt-0 justify-content-end">
+                <div class="members-aviable w-50">
+                  <p>Neue
+                    <br> Skills</p>
+                  <span class="display-4 dark">123</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of row 2 - col 2-->
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <div class="card-header bg-dark">Projekt Archive</div>
+              <div class="card-body pb-0">
+                <ul class="members">
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info w-60">
+                      <div class="member-skill">
+                        <h5>ABCDE123456789</h5>
+                        <span class="date">16.05.17</span>
+                        <p>Projekt Nummer:
+                          <a href="#">Qwer12345678</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="member-info w-40">
+                      <div class="member-head">
+                        <p class="mb-2">Leitung bei</p>
+                        <p class="blue">Management GmbH 7578843 Hamburg</p>
+                      </div>
+                    </div>
+                    <button id="archivelist1" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="archivelist1">
+                      <div class="dropdown-item"> Project 1</div>
+                      <div class="dropdown-item"> Project 2</div>
+                      <div class="dropdown-item"> Project 3</div>
+                      <div class="dropdown-item"> Project 4</div>
+                    </div>
+                  </li>
+                  <!-- end member-1 -->
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info w-60">
+                      <div class="member-skill">
+                        <h5>ABCDE123456789</h5>
+                        <span class="date">16.05.17</span>
+                        <p>Projekt Nummer:
+                          <a href="#">Qwer12345678</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="member-info w-40">
+                      <div class="member-head">
+                        <p class="mb-2">Leitung bei</p>
+                        <p class="blue">Management GmbH 7578843 Hamburg</p>
+                      </div>
+                    </div>
+                    <button id="archivelist2" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="archivelist2">
+                      <div class="dropdown-item"> Project 1</div>
+                      <div class="dropdown-item"> Project 2</div>
+                      <div class="dropdown-item"> Project 3</div>
+                      <div class="dropdown-item"> Project 4</div>
+                    </div>
+                  </li>
+                  <!-- end member-2 -->
+                </ul>
+                <!-- end of Members -->
+
+              </div>
+              <div class="card-footer pt-0 justify-content-end">
+                <div class="members-aviable w-50">
+                  <p>Alle
+                    <br> Projekte</p>
+                  <span class="display-4 dark">03</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of row 2 - col 3-->
+        <!-- </div>end of row 2 -->
+
+        <!-- row 3 -->
+        <!-- <div class="row row-flex">-->
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <div class="card-header bg-dark">Aufgebene Projekte</div>
+              <div class="card-body pb-0">
+                <ul class="members">
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info w-60">
+                      <div class="member-skill">
+                        <h5>ABCDE123456789</h5>
+                        <span class="date">16.05.17</span>
+                        <p>Projekt Nummer:
+                          <a href="#">Qwer12345678</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="member-info w-40">
+                      <div class="member-head d-flex align-items-center">
+                        <h5><span class="anfrage-count green">5</span> anfragen</h5>
+                      </div>
+                    </div>
+                    <button id="aufgebenelist1" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="aufgebenelist1">
+                      <div class="dropdown-item"> Project 1</div>
+                      <div class="dropdown-item"> Project 2</div>
+                      <div class="dropdown-item"> Project 3</div>
+                      <div class="dropdown-item"> Project 4</div>
+                    </div>
+                  </li>
+                  <!-- member-1 -->
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info w-60">
+                      <div class="member-skill">
+                        <h5>ABCDE123456789</h5>
+                        <span class="date">16.05.17</span>
+                        <p>Projekt Nummer:
+                          <a href="#">Qwer12345678</a>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="member-info w-40">
+                      <div class="member-head d-flex align-items-center">
+                        <h5><span class="anfrage-count green">1</span> anfrage</h5>
+                      </div>
+                    </div>
+                    <button id="aufgebenelist2" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="aufgebenelist2">
+                      <div class="dropdown-item"> Project 1</div>
+                      <div class="dropdown-item"> Project 2</div>
+                      <div class="dropdown-item"> Project 3</div>
+                      <div class="dropdown-item"> Project 4</div>
+                    </div>
+                  </li>
+                  <!-- member-2 -->
+                </ul>
+                <!-- Members -->
+                
+              </div>
+              <div class="card-footer pt-0 justify-content-end">
+                <div class="members-aviable w-50">
+                  <p>Alle aufgebene
+                    <br> Projekte</p>
+                  <span class="display-4 dark">08</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- end of row 3 - col 1-->
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <div class="card-header bg-dark">Projekt Anfragen</div>
+              <div class="card-body pb-0">
+                <ul class="members">
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info w-80">
+                      <div class="member-img">
+                        <img src="http://placehold.it/60x50" alt="user photo" class="mr-3">
+                      </div>
+                      <div class="member-skill">
+                        <h5>Aufbau SAP Cloud Platform</h5>
+                        <p>Company Name</p>
+                        <p>12344 Hamburg</p>
+                      </div>
+                    </div>
+                    <div class="member-info w-20">
+
+                    </div>
+                    <button id="anfragenlist2" class="member-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="anfragenlist2">
+                      <div class="dropdown-item"> Project 1</div>
+                      <div class="dropdown-item"> Project 2</div>
+                      <div class="dropdown-item"> Project 3</div>
+                      <div class="dropdown-item"> Project 4</div>
+                    </div>
+                    
+                  </li>
+                  <!-- member-1 -->
+                  <li class="member pb-2 mb-2">
+                    <div class="member-info w-80">
+                      <div class="member-img">
+                        <img src="http://placehold.it/60x50" alt="user photo" class="mr-3">
+                      </div>
+                      <div class="member-skill">
+                        <h5>Beratung Analytics Cloud</h5>
+                        <p>Best Builder Solution</p>
+                        <p>34577 München</p>
+                      </div>
+                    </div>
+                    <div class="member-info w-20">
+
+                    </div>
+                  </li>
+                  <!-- member-2 -->
+                </ul>
+                <!-- Members -->
+              </div>
+              <div class="card-footer pt-0 justify-content-end">
+                <div class="members-aviable w-50">
+                  <p>ungesehene Anfragen</p>
+                  <span class="display-4 dark">123</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- end row 3 - col 2-->
+          <div class="col-xl-4 col-md-6">
+            <div class="card">
+              <div class="card-header bg-dark">Mitglieder</div>
+              <div class="card-body d-flex align-items-center">
+                <div class="members-aviable">
+                  <p>Test Company Mitglieder</p>
+                  <span class="display-3 blue">1234</span>
+                </div>
+              </div>
+              <div class="card-footer">
+              </div>
+            </div>
+          </div><!-- end of row 3 - col 3-->
+        </div><!-- end of row 3 -->
+      </section> <!-- end of content-boxes -->
+
+
+    </main><!-- end of Main content -->
+  </div>
+
+  <!-- JS -->
+  <script src="assets/js/main.min.js"></script>
 </body>
+
 </html>

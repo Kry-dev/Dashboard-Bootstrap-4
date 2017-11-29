@@ -1,6 +1,38 @@
 .header{
-    height: 500px;
-    background-color: $gray-300;
+    height: $header-height;
+    background-color: $dark;
     color: $white;
-    text-align: center;    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.875rem;
+    form{
+        width: 280px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        input.form-control{
+            width: 100%;
+            height: $header-height / 2;
+            font-size: 0.8rem;
+            color: $black;
+            padding-left: 1.25rem;
+        }
+        .header-form-btn{
+            background: transparent;
+            margin-right: -18px;
+            position: relative;
+            padding: 0;
+            border: none;
+            align-items: center;
+            &:focus{
+                outline: none;
+            }
+            .fa{
+                z-index: 30;
+                font-size: 0.8rem;
+                line-height: 1.25rem;
+            }
+        }
+    }   
 }

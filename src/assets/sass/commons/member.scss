@@ -1,0 +1,153 @@
+ul.members{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+.member{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 1px solid $gray-50;
+    text-align: left;
+    &-info{
+        flex-direction: row;
+        display: flex;
+
+    }
+    &-company{
+        margin-right: 5px;
+    }
+    p{
+        font-family: "Montserrat";
+        font-size: 0.5625rem;
+        margin-bottom: 0;
+        text-align: left;
+        font-weight: normal;
+    }
+    span{
+        font-size: 0.625rem;
+        text-align: left;
+    }
+    &-skill-tags{
+        justify-self: flex-end;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .btn{
+        color: $teal;   
+        display: flex;
+        align-self: flex-end;
+
+    }
+    
+    &-skill{
+        h5{
+            margin-bottom: 0;
+        }
+    }
+    h5{
+        font-size: 0.75rem;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    &-btn{
+        font-size: 0.75rem;
+        color: #e9eae9;
+        background: transparent;
+        border: none;
+        display: flex;
+        align-self: center;
+        justify-self: flex-end;
+        &:focus,
+        &:hover{
+            outline: none;
+            cursor: pointer;
+        }  
+    }
+    &-postiton{
+        display: flex;
+        align-items: center;
+    }
+    &-head{
+        .anfrage-count{
+            font-size: 1.125rem;
+        }
+    }
+}
+.tags-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 65%;
+    height: 100%;
+    flex-wrap: wrap;   
+    font-family: "Open-sans", sans-serif;
+    li{
+        line-height: 1;
+    }
+    .badge{
+        font-size: 0.625rem;
+    }
+}
+
+.members-aviable{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    p{
+        text-decoration: underline;
+        font-weight: 600;
+        text-align: right;
+        margin-bottom: 0;
+        margin-right: 0.5rem;
+        font-size: 0.75rem;
+    }
+    span{
+        font-weight: 800;
+        margin-bottom: 0; 
+        letter-spacing: 1.5px;
+        line-height: 1;
+    }
+}
+
+.skill-users{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    position: relative;
+    a{
+        position: relative;
+        margin-right: 2px;
+        font-size: 0.625rem;
+        font-family: 'Open-sans';
+        text-decoration: none;
+        width: 19px;
+        height: 19px;
+
+    }
+    .skill-hidden{
+        opacity: .4;
+        &:hover{
+            opacity: 1;
+        }
+        .skill-hid-count{
+            color: $white;
+            opacity: 1;
+            display: block;
+            position: absolute;
+            top: 67%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+}
