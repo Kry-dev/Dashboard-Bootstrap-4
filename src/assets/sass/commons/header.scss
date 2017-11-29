@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1.875rem;
+    z-index: 120;
     form{
         width: 280px;
         display: flex;
@@ -34,5 +35,23 @@
                 line-height: 1.25rem;
             }
         }
-    }   
+    }  
+    .toggle-sidebar{
+        z-index: 150;
+    }
+   @include media-breakpoint-only(sm){
+        display: flex;
+        padding: 1rem;
+        flex-direction: row-reverse !important;
+        z-index: 120;
+        form{
+            width: 50%;
+        }
+    }
+    @include media-breakpoint-only(xs){
+        flex-direction: row-reverse ;
+        form{
+            width: 70%;
+        }
+    }
 }

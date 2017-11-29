@@ -12,6 +12,7 @@
         color: $white;
         padding: 0 1.875rem;
         font-family: 'Montserrat-ExtraBold';
+        
     }
     &-body{
         padding: 1.625rem 1.875rem;
@@ -20,5 +21,23 @@
         display: flex;
         border: 0;
         background: transparent;
+    }
+    @include media-breakpoint-only(sm){
+        &-header{
+            padding: 0 1rem;
+        }
+        &-body,
+        &-footer{
+            padding: 1rem;
+        }
+    }
+    @include media-breakpoint-only(xs){
+        &-header{
+            padding: 0 1rem;
+        }
+        &-body,
+        &-footer{
+            padding: 1rem;
+        }
     }
 }

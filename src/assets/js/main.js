@@ -6,9 +6,7 @@
 //= ../../../node_modules/bootstrap/js/dist/collapse.js
 
 
-
-
-
 //= commons/tooltip.js
 //= commons/dropdown.js
 //= commons/collapse.js
+//= commons/scrollTop.js

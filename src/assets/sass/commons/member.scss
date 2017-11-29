@@ -80,6 +80,22 @@ ul.members{
             font-size: 1.125rem;
         }
     }
+    @include media-breakpoint-only(xs){
+        flex-direction: column;
+        align-items: center;
+        &-info,
+        &-company,
+        &-skill-tags,
+        .w-30{
+            width: 100% !important;
+            margin-bottom: .5rem;
+        }
+        &-btn{
+            font-size: 2rem;
+            align-self: flex-end;
+        }
+
+    }
 }
 .tags-list{
     display: flex;
@@ -94,6 +110,16 @@ ul.members{
     }
     .badge{
         font-size: 0.625rem;
+    }
+    @include media-breakpoint-only(xs),
+     media-breakpoint-only(sm){
+        width: 80%;
+        li{
+            margin-right: 5px;
+        }
+        .badge{
+            font-size: 75%;
+        }
     }
 }
 
