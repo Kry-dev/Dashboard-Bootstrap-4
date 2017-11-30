@@ -1,19 +1,6 @@
-@font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../fonts/Montserrat-Bold.ttf')  format('truetype');
-    font-weight: 700;
-}
-@font-face {
-    font-family: 'Montserrat-ExtraBold';
-    src: url('../fonts/Montserrat-Bold.ttf')  format('truetype');
-    font-weight: 900;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Bold.ttf')  format('truetype');
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'Open-sans';
-    src: url('../fonts/OpenSans-Regular.ttf')  format('truetype');
-}
+// Font Montserrat from folder  /fonts/Montserrat
+@import '../fonts/Montserrat/Montserrat';
+
+
+// Font OpenSans from folder  /fonts/OpenSans
+@import '../fonts/OpenSans/OpenSans';

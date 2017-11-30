@@ -30,6 +30,7 @@ ul.members{
     span{
         font-size: 0.625rem;
         text-align: left;
+        font-family: 'OpenSans-SemiBold';
     }
     &-skill-tags{
         justify-self: flex-end;
@@ -55,7 +56,8 @@ ul.members{
         font-size: 0.75rem;
         text-align: left;
         margin-bottom: 5px;
-        font-weight: bold;
+        color: $dark;
+        font-family: "Montserrat-ExtraBold";
     }
     &-btn{
         font-size: 0.75rem;
@@ -111,8 +113,7 @@ ul.members{
     .badge{
         font-size: 0.625rem;
     }
-    @include media-breakpoint-only(xs),
-     media-breakpoint-only(sm){
+    @include media-breakpoint-only(xs){
         width: 80%;
         li{
             margin-right: 5px;
@@ -130,14 +131,14 @@ ul.members{
     align-items: flex-end;
     p{
         text-decoration: underline;
-        font-weight: 600;
+        font-family: 'Montserrat-SemiBold';
         text-align: right;
         margin-bottom: 0;
         margin-right: 0.5rem;
         font-size: 0.75rem;
     }
     span{
-        font-weight: 800;
+        font-family: "Montserrat-ExtraBold";
         margin-bottom: 0; 
         letter-spacing: 1.5px;
         line-height: 1;

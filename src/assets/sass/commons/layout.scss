@@ -1,4 +1,9 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
 body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
     @include media-breakpoint-only(md){
         $font-size-base: 12px;
         font-size: 12px;
@@ -43,9 +48,8 @@ body{
         }
     }
     &-title{
-        // font-family: Montserrat;
+        font-family: 'Montserrat-ExtraBold';
         font-size: 1rem;
-        font-weight: bold;
         letter-spacing: 0.7px;
         text-align: left;
         color: $black;
